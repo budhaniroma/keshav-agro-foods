@@ -53,14 +53,26 @@ const impactStats = [
   { value: "100%", label: "Renewable energy in production" },
 ];
 
+/* Gold ornamental divider */
+function GoldDivider() {
+  return (
+    <div className="flex items-center justify-center gap-3 mt-3 mb-1">
+      <div className="h-px w-12 bg-gradient-to-r from-transparent to-gold/40" />
+      <span className="text-gold/60 text-xs">✦</span>
+      <div className="h-px w-12 bg-gradient-to-l from-transparent to-gold/40" />
+    </div>
+  );
+}
+
 export default function SustainabilityPage() {
   return (
     <div data-ocid="sustainability.page">
-      {/* Hero */}
+      {/* Hero — peacock pattern background + gold border */}
       <section
         className="relative py-28 flex items-center overflow-hidden bg-primary/10"
         data-ocid="sustainability.hero_section"
       >
+        {/* Farm photo */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -69,17 +81,33 @@ export default function SustainabilityPage() {
           }}
           aria-hidden="true"
         />
+        {/* Peacock feather pattern layer */}
+        <div
+          className="absolute inset-0 pattern-peacock-feather opacity-70 pointer-events-none"
+          aria-hidden="true"
+        />
+        {/* Gold top border */}
+        <div
+          className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/50 to-transparent pointer-events-none"
+          aria-hidden="true"
+        />
+        {/* Gold bottom border */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/30 to-transparent pointer-events-none"
+          aria-hidden="true"
+        />
         <div className="container mx-auto px-4 relative z-10 max-w-3xl text-center">
           <motion.div {...fadeUp()}>
             <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-4">
               Our Commitment to the Planet
             </p>
-            <h1 className="font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-6">
+            <h1 className="font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-3">
               Feeding Families,
               <br />
               <span className="text-primary">Protecting the Earth</span>
             </h1>
-            <p className="text-muted-foreground font-body text-lg leading-relaxed">
+            <GoldDivider />
+            <p className="text-muted-foreground font-body text-lg leading-relaxed mt-5">
               At Keshav Agro Foods, sustainability isn't a marketing term. It's
               embedded in every decision — from the seed to the shelf.
             </p>
@@ -94,10 +122,11 @@ export default function SustainabilityPage() {
       >
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div className="text-center mb-14" {...fadeUp()}>
-            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-3">
+            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-1">
               Why Soy is the Sustainable Choice
             </h2>
-            <p className="text-muted-foreground font-body text-lg max-w-2xl mx-auto">
+            <GoldDivider />
+            <p className="text-muted-foreground font-body text-lg max-w-2xl mx-auto mt-5">
               The environmental impact of soy-based food is dramatically lower
               than animal agriculture. Choosing Keshav Agro Foods is choosing a
               smaller footprint.
@@ -110,7 +139,7 @@ export default function SustainabilityPage() {
                 key={stat.label}
                 {...fadeUp(i * 0.1)}
                 data-ocid={`sustainability.impact_stat.${i + 1}`}
-                className="text-center p-6 rounded-xl bg-secondary/30 border border-border"
+                className="text-center p-6 rounded-xl bg-secondary/30 border border-border hover:border-peacock/20 transition-smooth"
               >
                 <p className="font-display font-bold text-3xl text-primary mb-1">
                   {stat.value}
@@ -134,9 +163,10 @@ export default function SustainabilityPage() {
             <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-3">
               Our Pledges
             </p>
-            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight">
+            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-1">
               Our Sustainability Commitments
             </h2>
+            <GoldDivider />
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {commitments.map((c, i) => (
@@ -145,17 +175,17 @@ export default function SustainabilityPage() {
                 {...fadeUp(i * 0.1)}
                 data-ocid={`sustainability.commitment_card.${i + 1}`}
               >
-                <Card className="h-full border-border hover:shadow-elevated transition-smooth">
+                <Card className="h-full border-border hover:shadow-elevated transition-smooth hover:border-peacock/20">
                   <CardContent className="p-8">
                     <div className="flex items-start gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                        <c.icon className="w-6 h-6 text-primary" />
+                      <div className="w-12 h-12 rounded-xl bg-peacock/8 border border-peacock/15 flex items-center justify-center shrink-0">
+                        <c.icon className="w-6 h-6 text-peacock" />
                       </div>
                       <div>
                         <h3 className="font-display font-bold text-foreground text-lg">
                           {c.title}
                         </h3>
-                        <p className="text-primary font-body text-sm font-medium">
+                        <p className="text-gold font-body text-sm font-medium">
                           {c.stats}
                         </p>
                       </div>
@@ -179,7 +209,7 @@ export default function SustainabilityPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div {...fadeUp()}>
-              <div className="rounded-2xl overflow-hidden shadow-elevated aspect-video">
+              <div className="rounded-2xl overflow-hidden shadow-elevated aspect-video border border-border">
                 <img
                   src="/assets/generated/sustainability-farm.dim_1200x500.jpg"
                   alt="Keshav Agro Foods sustainable soybean farm"
@@ -192,9 +222,11 @@ export default function SustainabilityPage() {
               <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-4">
                 From Our Farms
               </p>
-              <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-5">
+              <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-2">
                 Fields That Feed the Future
               </h2>
+              {/* Gold accent underline */}
+              <div className="w-12 h-[2px] bg-gradient-to-r from-gold/60 to-transparent mb-5" />
               <p className="text-muted-foreground font-body leading-relaxed mb-4">
                 Our partner farms in Maharashtra and Madhya Pradesh use
                 traditional and modern sustainable techniques — crop rotation,

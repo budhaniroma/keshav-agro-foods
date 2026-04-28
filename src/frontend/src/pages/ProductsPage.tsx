@@ -44,7 +44,8 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       }}
       data-ocid={`products.product_card.${index + 1}`}
     >
-      <Card className="overflow-hidden group hover:shadow-elevated transition-smooth border-border h-full flex flex-col">
+      {/* ornament-corner adds gold/peacock decorative corner brackets */}
+      <Card className="ornament-corner overflow-hidden group hover:shadow-elevated transition-smooth border-border h-full flex flex-col hover:border-gold/20">
         <div className="relative overflow-hidden aspect-square bg-secondary/20">
           <img
             src={product.image}
@@ -57,6 +58,15 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
               {product.badge}
             </Badge>
           )}
+          {/* Protein highlight badge — gold accent */}
+          <div className="absolute bottom-3 right-3 bg-card/90 backdrop-blur-sm border border-gold/25 rounded-lg px-2.5 py-1.5 shadow-subtle">
+            <span className="font-display font-bold text-xs text-gold leading-none">
+              {product.nutrition?.[0]?.value ?? "—"}
+            </span>
+            <span className="block text-[10px] text-muted-foreground font-body leading-none mt-0.5">
+              Protein
+            </span>
+          </div>
         </div>
         <CardContent className="p-6 flex flex-col flex-1">
           <div className="flex items-start justify-between mb-3">
@@ -87,7 +97,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
                   key={b}
                   className="flex items-center gap-1.5 text-xs text-muted-foreground font-body"
                 >
-                  <Check className="w-3.5 h-3.5 text-primary shrink-0" />
+                  <Check className="w-3.5 h-3.5 text-peacock shrink-0" />
                   <span>{b}</span>
                 </li>
               ))}
@@ -101,12 +111,14 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
               Nutrition per serving
             </h4>
             <div className="grid grid-cols-4 gap-2">
-              {product.nutrition.map((n) => (
+              {product.nutrition.map((n, ni) => (
                 <div
                   key={n.label}
-                  className="text-center bg-secondary/30 rounded-lg p-2"
+                  className={`text-center rounded-lg p-2 ${ni === 0 ? "bg-gold/8 border border-gold/15" : "bg-secondary/30"}`}
                 >
-                  <p className="font-display font-bold text-foreground text-sm">
+                  <p
+                    className={`font-display font-bold text-sm ${ni === 0 ? "text-gold" : "text-foreground"}`}
+                  >
                     {n.value}
                   </p>
                   <p className="text-xs text-muted-foreground font-body">
@@ -147,10 +159,19 @@ export default function ProductsPage() {
     <div data-ocid="products.page">
       {/* Hero */}
       <section
-        className="py-16 bg-secondary/20"
+        className="relative py-16 bg-secondary/20 overflow-hidden"
         data-ocid="products.hero_section"
       >
-        <div className="container mx-auto px-4 text-center max-w-2xl">
+        {/* Gold top border */}
+        <div
+          className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/45 to-transparent pointer-events-none"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="container mx-auto px-4 text-center max-w-2xl relative z-10">
           <motion.div {...fadeUp()}>
             <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-4">
               Pure Soy Nutrition
@@ -158,6 +179,12 @@ export default function ProductsPage() {
             <h1 className="font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-4">
               Our Product Range
             </h1>
+            {/* Gold ornamental divider */}
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold/40" />
+              <span className="text-gold/60 text-xs">✦</span>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold/40" />
+            </div>
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
               Three premium products, one commitment — natural, honest,
               nutritious food for every lifestyle.
@@ -187,9 +214,14 @@ export default function ProductsPage() {
       >
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <motion.div {...fadeUp()}>
-            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-4">
+            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-2">
               Quality You Can Taste
             </h2>
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-gold/40" />
+              <span className="text-gold/60 text-xs">✦</span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-gold/40" />
+            </div>
             <p className="text-muted-foreground font-body text-lg leading-relaxed mb-6">
               Every product is made in small batches to ensure freshness, tested
               for nutritional integrity, and packed with love in eco-conscious

@@ -19,8 +19,19 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-4 py-14">
+    <footer className="relative bg-card border-t border-border overflow-hidden">
+      {/* Peacock-inspired top accent border — gold gradient */}
+      <div
+        className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/40 to-transparent pointer-events-none"
+        aria-hidden="true"
+      />
+      {/* Very subtle peacock pattern in footer background */}
+      <div
+        className="absolute inset-0 pattern-peacock-feather opacity-30 pointer-events-none"
+        aria-hidden="true"
+      />
+
+      <div className="container mx-auto px-4 py-14 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
@@ -45,16 +56,23 @@ export default function Footer() {
               Pure plant power for a healthier life. Premium soy-based nutrition
               crafted with care and purpose.
             </p>
-            <p className="text-xs text-muted-foreground font-body italic">
-              "Nourishing lives, naturally."
+            {/* Gold-accented tagline */}
+            <p className="text-xs font-body italic">
+              <span className="text-gold/70">"</span>
+              <span className="text-muted-foreground">
+                Nourishing lives, naturally.
+              </span>
+              <span className="text-gold/70">"</span>
             </p>
           </div>
 
           {/* Quick links */}
           <div>
-            <h3 className="font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
+            <h3 className="font-display font-semibold text-foreground mb-1 text-sm uppercase tracking-wider">
               Quick Links
             </h3>
+            {/* Peacock teal underline accent */}
+            <div className="w-8 h-[2px] bg-gradient-to-r from-peacock/40 to-transparent mb-4" />
             <nav className="flex flex-col gap-2" aria-label="Footer navigation">
               {NAV_LINKS.map((link) => (
                 <Link
@@ -71,9 +89,11 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
+            <h3 className="font-display font-semibold text-foreground mb-1 text-sm uppercase tracking-wider">
               Contact Us
             </h3>
+            {/* Peacock teal underline accent */}
+            <div className="w-8 h-[2px] bg-gradient-to-r from-peacock/40 to-transparent mb-4" />
             <ul className="flex flex-col gap-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Phone
@@ -106,9 +126,11 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
+            <h3 className="font-display font-semibold text-foreground mb-1 text-sm uppercase tracking-wider">
               Stay Updated
             </h3>
+            {/* Peacock teal underline accent */}
+            <div className="w-8 h-[2px] bg-gradient-to-r from-peacock/40 to-transparent mb-4" />
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               Get wellness tips, new product alerts, and exclusive offers
               delivered to your inbox.

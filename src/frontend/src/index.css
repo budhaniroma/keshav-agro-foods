@@ -27,6 +27,11 @@
     --accent: 0.55 0.08 108;
     --accent-foreground: 0.98 0 0;
 
+    --peacock: 0.55 0.12 200;
+    --peacock-foreground: 0.98 0 0;
+    --gold: 0.72 0.12 80;
+    --gold-foreground: 0.18 0.01 0;
+
     --destructive: 0.58 0.19 22;
     --destructive-foreground: 0.98 0 0;
 
@@ -68,6 +73,11 @@
 
     --accent: 0.68 0.08 108;
     --accent-foreground: 0.13 0.01 0;
+
+    --peacock: 0.65 0.12 200;
+    --peacock-foreground: 0.13 0.01 0;
+    --gold: 0.75 0.12 80;
+    --gold-foreground: 0.13 0.01 0;
 
     --destructive: 0.68 0.18 22;
     --destructive-foreground: 0.13 0.01 0;
@@ -111,6 +121,70 @@
 
   .shadow-subtle {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Krishna-inspired decorative patterns */
+  .pattern-peacock-feather {
+    background-image: radial-gradient(
+        circle at 20% 30%,
+        oklch(0.55 0.12 200 / 0.08) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 70%,
+        oklch(0.72 0.12 80 / 0.06) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 50% 50%,
+        oklch(0.55 0.08 108 / 0.05) 0%,
+        transparent 40%
+      );
+    background-size: 300px 300px, 400px 400px, 350px 350px;
+  }
+
+  .ornament-corner {
+    position: relative;
+  }
+
+  .ornament-corner::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid oklch(0.72 0.12 80 / 0.15);
+    border-right: none;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+  }
+
+  .ornament-corner::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid oklch(0.55 0.12 200 / 0.12);
+    border-left: none;
+    border-top: none;
+    bottom: 0;
+    right: 0;
+  }
+
+  .text-gold {
+    color: oklch(var(--gold));
+  }
+
+  .text-peacock {
+    color: oklch(var(--peacock));
+  }
+
+  .border-gold {
+    border-color: oklch(var(--gold) / 0.3);
+  }
+
+  .border-peacock {
+    border-color: oklch(var(--peacock) / 0.3);
   }
 }
 

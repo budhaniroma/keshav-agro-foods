@@ -40,12 +40,36 @@ const values = [
   },
 ];
 
+/* Ornamental section divider reused across the page */
+function GoldDivider() {
+  return (
+    <div className="flex items-center justify-center gap-3 mt-4">
+      <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold/40" />
+      <span className="text-gold/60 text-xs">✦</span>
+      <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold/40" />
+    </div>
+  );
+}
+
 export default function AboutPage() {
   return (
     <div data-ocid="about.page">
-      {/* Hero */}
-      <section className="py-24 bg-secondary/20" data-ocid="about.hero_section">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
+      {/* Hero — gold border-top accent */}
+      <section
+        className="relative py-24 bg-secondary/20 overflow-hidden"
+        data-ocid="about.hero_section"
+      >
+        {/* Gold top border */}
+        <div
+          className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/50 to-transparent pointer-events-none"
+          aria-hidden="true"
+        />
+        {/* Subtle peacock feather pattern */}
+        <div
+          className="absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
           <motion.div {...fadeUp()}>
             <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-4">
               Our Story
@@ -55,7 +79,9 @@ export default function AboutPage() {
               <br />
               <span className="text-primary">Driven by Purpose</span>
             </h1>
-            <p className="text-muted-foreground font-body text-lg leading-relaxed">
+            {/* Gold ornamental divider below headline */}
+            <GoldDivider />
+            <p className="text-muted-foreground font-body text-lg leading-relaxed mt-6">
               Keshav Agro Foods was born from a simple belief: that nature
               provides everything our bodies need. We set out to make premium
               plant-based nutrition accessible to every Indian household.
@@ -69,9 +95,11 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
             <motion.div {...fadeUp()}>
-              <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-5">
+              <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-2">
                 How It All Began
               </h2>
+              {/* Gold accent underline */}
+              <div className="w-12 h-[2px] bg-gradient-to-r from-gold/60 to-transparent mb-5" />
               <p className="text-muted-foreground font-body leading-relaxed mb-4">
                 Founded in Maharashtra, Keshav Agro Foods started as a small
                 family enterprise with a vision: to bring the incredible
@@ -101,7 +129,7 @@ export default function AboutPage() {
                   loading="lazy"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl p-5 shadow-elevated">
+              <div className="absolute -bottom-4 -left-4 bg-card border border-gold/20 rounded-xl p-5 shadow-elevated">
                 <p className="font-display font-bold text-3xl text-primary">
                   50+
                 </p>
@@ -120,11 +148,20 @@ export default function AboutPage() {
         data-ocid="about.mission_section"
       >
         <div className="container mx-auto px-4 max-w-4xl">
+          <motion.div className="text-center mb-12" {...fadeUp()}>
+            <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-3">
+              Purpose &amp; Direction
+            </p>
+            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-1">
+              Mission &amp; Vision
+            </h2>
+            <GoldDivider />
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div {...fadeUp()} data-ocid="about.mission_card">
-              <Card className="h-full border-border shadow-subtle hover:shadow-elevated transition-smooth">
+              <Card className="ornament-corner h-full border-border shadow-subtle hover:shadow-elevated transition-smooth">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5">
                     <Target className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-display font-bold text-xl text-foreground mb-4">
@@ -140,10 +177,10 @@ export default function AboutPage() {
               </Card>
             </motion.div>
             <motion.div {...fadeUp(0.1)} data-ocid="about.vision_card">
-              <Card className="h-full border-border shadow-subtle hover:shadow-elevated transition-smooth">
+              <Card className="ornament-corner h-full border-border shadow-subtle hover:shadow-elevated transition-smooth">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5">
-                    <Eye className="w-6 h-6 text-accent" />
+                  <div className="w-12 h-12 rounded-xl bg-peacock/10 border border-peacock/20 flex items-center justify-center mb-5">
+                    <Eye className="w-6 h-6 text-peacock" />
                   </div>
                   <h3 className="font-display font-bold text-xl text-foreground mb-4">
                     Our Vision
@@ -168,9 +205,10 @@ export default function AboutPage() {
             <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-3">
               What Drives Us
             </p>
-            <h2 className="font-display font-bold text-4xl text-foreground tracking-tight">
+            <h2 className="font-display font-bold text-4xl text-foreground tracking-tight mb-1">
               Our Core Values
             </h2>
+            <GoldDivider />
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {values.map((value, i) => (
@@ -178,10 +216,10 @@ export default function AboutPage() {
                 key={value.title}
                 {...fadeUp(i * 0.1)}
                 data-ocid={`about.value_card.${i + 1}`}
-                className="text-center p-6 rounded-xl bg-card border border-border hover:shadow-subtle transition-smooth"
+                className="text-center p-6 rounded-xl bg-card border border-border hover:shadow-subtle hover:border-peacock/20 transition-smooth"
               >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-full bg-peacock/8 border border-peacock/15 flex items-center justify-center mx-auto mb-4">
+                  <value.icon className="w-6 h-6 text-peacock" />
                 </div>
                 <h3 className="font-display font-semibold text-foreground mb-2">
                   {value.title}

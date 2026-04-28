@@ -81,10 +81,19 @@ export default function ContactPage() {
     <div data-ocid="contact.page">
       {/* Hero */}
       <section
-        className="py-20 bg-secondary/20"
+        className="relative py-20 bg-secondary/20 overflow-hidden"
         data-ocid="contact.hero_section"
       >
-        <div className="container mx-auto px-4 text-center max-w-2xl">
+        {/* Gold top border */}
+        <div
+          className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/45 to-transparent pointer-events-none"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="container mx-auto px-4 text-center max-w-2xl relative z-10">
           <motion.div {...fadeUp()}>
             <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-4">
               We'd Love to Hear From You
@@ -92,6 +101,12 @@ export default function ContactPage() {
             <h1 className="font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-4">
               Get in Touch
             </h1>
+            {/* Gold ornamental divider */}
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold/40" />
+              <span className="text-gold/60 text-xs">✦</span>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold/40" />
+            </div>
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
               Whether you have a question about our products, want to place a
               bulk order, or simply want to say hello — we're here for you.

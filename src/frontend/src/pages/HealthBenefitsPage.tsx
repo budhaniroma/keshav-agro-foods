@@ -84,25 +84,46 @@ const healthTopics = [
   },
 ];
 
+/* Gold ornamental divider */
+function GoldDivider() {
+  return (
+    <div className="flex items-center justify-center gap-3 mt-3 mb-1">
+      <div className="h-px w-12 bg-gradient-to-r from-transparent to-gold/40" />
+      <span className="text-gold/60 text-xs">✦</span>
+      <div className="h-px w-12 bg-gradient-to-l from-transparent to-gold/40" />
+    </div>
+  );
+}
+
 export default function HealthBenefitsPage() {
   return (
     <div data-ocid="health_benefits.page">
       {/* Hero */}
       <section
-        className="py-20 bg-secondary/20"
+        className="relative py-20 bg-secondary/20 overflow-hidden"
         data-ocid="health_benefits.hero_section"
       >
-        <div className="container mx-auto px-4 max-w-3xl text-center">
+        {/* Gold top border */}
+        <div
+          className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/45 to-transparent pointer-events-none"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
           <motion.div {...fadeUp()}>
             <p className="text-primary font-body text-sm uppercase tracking-widest font-medium mb-4">
               Science-Backed Wellness
             </p>
-            <h1 className="font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-6">
+            <h1 className="font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-3">
               The Health Power of
               <br />
               <span className="text-primary">Pure Soy Nutrition</span>
             </h1>
-            <p className="text-muted-foreground font-body text-lg leading-relaxed">
+            <GoldDivider />
+            <p className="text-muted-foreground font-body text-lg leading-relaxed mt-5">
               Backed by decades of nutritional science, soy is one of nature's
               most complete foods. Here's why Keshav Agro products are your best
               ally for a healthier life.
@@ -124,21 +145,27 @@ export default function HealthBenefitsPage() {
                 {...fadeUp(i * 0.08)}
                 data-ocid={`health_benefits.topic_card.${i + 1}`}
               >
-                <Card className="h-full border-border hover:shadow-elevated transition-smooth">
+                <Card className="h-full border-border hover:shadow-elevated transition-smooth hover:border-peacock/20">
                   <CardContent className="p-8">
                     <div className="flex items-start gap-4 mb-5">
-                      <span className="text-4xl" aria-hidden="true">
+                      {/* Peacock teal icon background */}
+                      <span
+                        className="text-4xl p-2 rounded-xl bg-peacock/6 border border-peacock/12 shrink-0"
+                        aria-hidden="true"
+                      >
                         {topic.icon}
                       </span>
                       <div>
                         <h3 className="font-display font-bold text-foreground text-lg leading-tight">
                           {topic.title}
                         </h3>
-                        <p className="text-primary font-body text-sm mt-0.5">
+                        <p className="text-peacock font-body text-sm mt-0.5">
                           {topic.subtitle}
                         </p>
                       </div>
                     </div>
+                    {/* Gold thin divider under header */}
+                    <div className="w-full h-px bg-gradient-to-r from-gold/25 to-transparent mb-4" />
                     <ul className="space-y-2.5">
                       {topic.points.map((point) => (
                         <li
@@ -146,7 +173,7 @@ export default function HealthBenefitsPage() {
                           className="flex items-start gap-2.5 text-sm text-muted-foreground font-body leading-relaxed"
                         >
                           <span
-                            className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"
+                            className="w-1.5 h-1.5 rounded-full bg-peacock mt-2 shrink-0"
                             aria-hidden="true"
                           />
                           {point}
@@ -168,10 +195,11 @@ export default function HealthBenefitsPage() {
       >
         <div className="container mx-auto px-4 max-w-3xl">
           <motion.div className="text-center mb-12" {...fadeUp()}>
-            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-3">
+            <h2 className="font-display font-bold text-3xl text-foreground tracking-tight mb-1">
               Soy Milk vs. Cow's Milk
             </h2>
-            <p className="text-muted-foreground font-body">
+            <GoldDivider />
+            <p className="text-muted-foreground font-body mt-4">
               Per 250ml serving comparison
             </p>
           </motion.div>

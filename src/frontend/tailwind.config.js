@@ -41,6 +41,14 @@ export default {
           DEFAULT: "oklch(var(--accent) / <alpha-value>)",
           foreground: "oklch(var(--accent-foreground))",
         },
+        peacock: {
+          DEFAULT: "oklch(var(--peacock) / <alpha-value>)",
+          foreground: "oklch(var(--peacock-foreground))",
+        },
+        gold: {
+          DEFAULT: "oklch(var(--gold) / <alpha-value>)",
+          foreground: "oklch(var(--gold-foreground))",
+        },
         popover: {
           DEFAULT: "oklch(var(--popover))",
           foreground: "oklch(var(--popover-foreground))",

@@ -26978,149 +26978,172 @@ function Footer() {
       setEmail("");
     }
   };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "bg-card border-t border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4 py-14", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-1", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          Link,
-          {
-            to: "/",
-            className: "flex items-center gap-2 group w-fit mb-4",
-            "aria-label": "Keshav Agro Foods",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-lg bg-primary flex items-center justify-center shadow-subtle", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Leaf, { className: "w-5 h-5 text-primary-foreground" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col leading-none", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display font-bold text-foreground text-base tracking-tight", children: "Keshav Agro" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground font-body tracking-wide", children: "Foods" })
-              ] })
-            ]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-body leading-relaxed mb-4", children: "Pure plant power for a healthier life. Premium soy-based nutrition crafted with care and purpose." }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground font-body italic", children: '"Nourishing lives, naturally."' })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider", children: "Quick Links" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "flex flex-col gap-2", "aria-label": "Footer navigation", children: NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Link,
-          {
-            to: link.href,
-            "data-ocid": `footer.${link.label.toLowerCase().replace(" ", "_")}_link`,
-            className: "text-sm text-muted-foreground hover:text-primary transition-smooth w-fit",
-            children: link.label
-          },
-          link.href
-        )) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider", children: "Contact Us" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "flex flex-col gap-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2 text-sm text-muted-foreground", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Phone,
-              {
-                className: "w-4 h-4 mt-0.5 text-primary shrink-0",
-                "aria-hidden": "true"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 98765 43210" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2 text-sm text-muted-foreground", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Mail,
-              {
-                className: "w-4 h-4 mt-0.5 text-primary shrink-0",
-                "aria-hidden": "true"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "a",
-              {
-                href: "mailto:hello@keshavagrofoods.in",
-                className: "hover:text-primary transition-smooth break-all",
-                children: "hello@keshavagrofoods.in"
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2 text-sm text-muted-foreground", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              MapPin,
-              {
-                className: "w-4 h-4 mt-0.5 text-primary shrink-0",
-                "aria-hidden": "true"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Maharashtra, India" })
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("footer", { className: "relative bg-card border-t border-border overflow-hidden", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/40 to-transparent pointer-events-none",
+        "aria-hidden": "true"
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "absolute inset-0 pattern-peacock-feather opacity-30 pointer-events-none",
+        "aria-hidden": "true"
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4 py-14 relative z-10", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-1", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/",
+              className: "flex items-center gap-2 group w-fit mb-4",
+              "aria-label": "Keshav Agro Foods",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-lg bg-primary flex items-center justify-center shadow-subtle", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Leaf, { className: "w-5 h-5 text-primary-foreground" }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col leading-none", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display font-bold text-foreground text-base tracking-tight", children: "Keshav Agro" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground font-body tracking-wide", children: "Foods" })
+                ] })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-body leading-relaxed mb-4", children: "Pure plant power for a healthier life. Premium soy-based nutrition crafted with care and purpose." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs font-body italic", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/70", children: '"' }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: "Nourishing lives, naturally." }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/70", children: '"' })
           ] })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-4 text-sm uppercase tracking-wider", children: "Stay Updated" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-4 leading-relaxed", children: "Get wellness tips, new product alerts, and exclusive offers delivered to your inbox." }),
-        subscribed ? /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "p",
-          {
-            className: "text-sm text-primary font-medium",
-            "data-ocid": "footer.newsletter_success_state",
-            children: "✓ Thank you for subscribing!"
-          }
-        ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "form",
-          {
-            onSubmit: handleSubscribe,
-            className: "flex flex-col gap-2",
-            "aria-label": "Newsletter signup",
-            children: [
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-1 text-sm uppercase tracking-wider", children: "Quick Links" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-[2px] bg-gradient-to-r from-peacock/40 to-transparent mb-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "flex flex-col gap-2", "aria-label": "Footer navigation", children: NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Link,
+            {
+              to: link.href,
+              "data-ocid": `footer.${link.label.toLowerCase().replace(" ", "_")}_link`,
+              className: "text-sm text-muted-foreground hover:text-primary transition-smooth w-fit",
+              children: link.label
+            },
+            link.href
+          )) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-1 text-sm uppercase tracking-wider", children: "Contact Us" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-[2px] bg-gradient-to-r from-peacock/40 to-transparent mb-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "flex flex-col gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2 text-sm text-muted-foreground", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(
-                Input,
+                Phone,
                 {
-                  type: "email",
-                  placeholder: "your@email.com",
-                  value: email,
-                  onChange: (e) => setEmail(e.target.value),
-                  required: true,
-                  "data-ocid": "footer.newsletter_input",
-                  className: "bg-background text-sm"
+                  className: "w-4 h-4 mt-0.5 text-primary shrink-0",
+                  "aria-hidden": "true"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 98765 43210" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2 text-sm text-muted-foreground", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Mail,
+                {
+                  className: "w-4 h-4 mt-0.5 text-primary shrink-0",
+                  "aria-hidden": "true"
                 }
               ),
               /* @__PURE__ */ jsxRuntimeExports.jsx(
-                Button,
+                "a",
                 {
-                  type: "submit",
-                  variant: "outline",
-                  size: "sm",
-                  "data-ocid": "footer.newsletter_submit_button",
-                  className: "w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth",
-                  children: "Subscribe"
+                  href: "mailto:hello@keshavagrofoods.in",
+                  className: "hover:text-primary transition-smooth break-all",
+                  children: "hello@keshavagrofoods.in"
                 }
               )
-            ]
-          }
-        )
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-12 pt-6 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-muted-foreground", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-        "© ",
-        year,
-        " Keshav Agro Foods. All rights reserved."
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-2 text-sm text-muted-foreground", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                MapPin,
+                {
+                  className: "w-4 h-4 mt-0.5 text-primary shrink-0",
+                  "aria-hidden": "true"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Maharashtra, India" })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-1 text-sm uppercase tracking-wider", children: "Stay Updated" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-[2px] bg-gradient-to-r from-peacock/40 to-transparent mb-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mb-4 leading-relaxed", children: "Get wellness tips, new product alerts, and exclusive offers delivered to your inbox." }),
+          subscribed ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "p",
+            {
+              className: "text-sm text-primary font-medium",
+              "data-ocid": "footer.newsletter_success_state",
+              children: "✓ Thank you for subscribing!"
+            }
+          ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "form",
+            {
+              onSubmit: handleSubscribe,
+              className: "flex flex-col gap-2",
+              "aria-label": "Newsletter signup",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Input,
+                  {
+                    type: "email",
+                    placeholder: "your@email.com",
+                    value: email,
+                    onChange: (e) => setEmail(e.target.value),
+                    required: true,
+                    "data-ocid": "footer.newsletter_input",
+                    className: "bg-background text-sm"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Button,
+                  {
+                    type: "submit",
+                    variant: "outline",
+                    size: "sm",
+                    "data-ocid": "footer.newsletter_submit_button",
+                    className: "w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth",
+                    children: "Subscribe"
+                  }
+                )
+              ]
+            }
+          )
+        ] })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-        "Built with love using",
-        " ",
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "a",
-          {
-            href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`,
-            target: "_blank",
-            rel: "noopener noreferrer",
-            className: "text-primary hover:underline transition-smooth",
-            children: "caffeine.ai"
-          }
-        )
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-12 pt-6 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-muted-foreground", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+          "© ",
+          year,
+          " Keshav Agro Foods. All rights reserved."
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+          "Built with love using",
+          " ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "text-primary hover:underline transition-smooth",
+              children: "caffeine.ai"
+            }
+          )
+        ] })
       ] })
     ] })
-  ] }) });
+  ] });
 }
 const LayoutGroupContext = reactExports.createContext({});
 function useConstant(init) {
@@ -35382,20 +35405,52 @@ const values = [
     description: "Every batch undergoes rigorous quality checks to ensure the nutrition and taste you expect, every time."
   }
 ];
+function GoldDivider$2() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mt-4", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-r from-transparent to-gold/40" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-l from-transparent to-gold/40" })
+  ] });
+}
 function AboutPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "about.page", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-24 bg-secondary/20", "data-ocid": "about.hero_section", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-3xl text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$5(), children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "Our Story" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-6", children: [
-        "Rooted in Nature,",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary", children: "Driven by Purpose" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed", children: "Keshav Agro Foods was born from a simple belief: that nature provides everything our bodies need. We set out to make premium plant-based nutrition accessible to every Indian household." })
-    ] }) }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "section",
+      {
+        className: "relative py-24 bg-secondary/20 overflow-hidden",
+        "data-ocid": "about.hero_section",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/50 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-3xl text-center relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$5(), children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "Our Story" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-6", children: [
+              "Rooted in Nature,",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary", children: "Driven by Purpose" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider$2, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed mt-6", children: "Keshav Agro Foods was born from a simple belief: that nature provides everything our bodies need. We set out to make premium plant-based nutrition accessible to every Indian household." })
+          ] }) })
+        ]
+      }
+    ),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 bg-background", "data-ocid": "about.story_section", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-14 items-center max-w-5xl mx-auto", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$5(), children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-5", children: "How It All Began" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-2", children: "How It All Began" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-[2px] bg-gradient-to-r from-gold/60 to-transparent mb-5" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed mb-4", children: "Founded in Maharashtra, Keshav Agro Foods started as a small family enterprise with a vision: to bring the incredible nutritional power of soy to health-conscious Indians who were struggling to find high-quality, affordable plant-based alternatives." }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed mb-4", children: "Our founder, inspired by the ancient wisdom of soy cultivation in India, partnered with local farmers to build a transparent, ethical supply chain from field to table. Today, we work with over 50 farming families across Maharashtra and Madhya Pradesh." }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed", children: "What began as a local initiative has grown into a beloved brand trusted by thousands of families — but our values remain unchanged: purity, nutrition, and sustainability in every product we make." })
@@ -35410,7 +35465,7 @@ function AboutPage() {
             loading: "lazy"
           }
         ) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute -bottom-4 -left-4 bg-card border border-border rounded-xl p-5 shadow-elevated", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute -bottom-4 -left-4 bg-card border border-gold/20 rounded-xl p-5 shadow-elevated", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-3xl text-primary", children: "50+" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-body", children: "Farming families" })
         ] })
@@ -35421,33 +35476,41 @@ function AboutPage() {
       {
         className: "py-20 bg-secondary/20",
         "data-ocid": "about.mission_section",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-4xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp$5(), "data-ocid": "about.mission_card", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border shadow-subtle hover:shadow-elevated transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Target, { className: "w-6 h-6 text-primary" }) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-xl text-foreground mb-4", children: "Our Mission" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed", children: "To promote healthy, plant-based living by making premium, natural soy-based nutrition affordable and accessible to every Indian family — without compromising on quality, taste, or sustainability." })
-          ] }) }) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp$5(0.1), "data-ocid": "about.vision_card", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border shadow-subtle hover:shadow-elevated transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Eye, { className: "w-6 h-6 text-accent" }) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-xl text-foreground mb-4", children: "Our Vision" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed", children: "A future where every Indian has access to sustainable, nutritious plant-based foods — and where our farming communities thrive because of ethical, transparent sourcing practices that honour both people and planet." })
-          ] }) }) })
-        ] }) })
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4 max-w-4xl", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-12", ...fadeUp$5(), children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-3", children: "Purpose & Direction" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-1", children: "Mission & Vision" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider$2, {})
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-8", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp$5(), "data-ocid": "about.mission_card", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "ornament-corner h-full border-border shadow-subtle hover:shadow-elevated transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Target, { className: "w-6 h-6 text-primary" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-xl text-foreground mb-4", children: "Our Mission" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed", children: "To promote healthy, plant-based living by making premium, natural soy-based nutrition affordable and accessible to every Indian family — without compromising on quality, taste, or sustainability." })
+            ] }) }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp$5(0.1), "data-ocid": "about.vision_card", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "ornament-corner h-full border-border shadow-subtle hover:shadow-elevated transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-peacock/10 border border-peacock/20 flex items-center justify-center mb-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Eye, { className: "w-6 h-6 text-peacock" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-xl text-foreground mb-4", children: "Our Vision" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed", children: "A future where every Indian has access to sustainable, nutritious plant-based foods — and where our farming communities thrive because of ethical, transparent sourcing practices that honour both people and planet." })
+            ] }) }) })
+          ] })
+        ] })
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 bg-background", "data-ocid": "about.values_section", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-14", ...fadeUp$5(), children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-3", children: "What Drives Us" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight", children: "Our Core Values" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight mb-1", children: "Our Core Values" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider$2, {})
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto", children: values.map((value, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
         motion.div,
         {
           ...fadeUp$5(i * 0.1),
           "data-ocid": `about.value_card.${i + 1}`,
-          className: "text-center p-6 rounded-xl bg-card border border-border hover:shadow-subtle transition-smooth",
+          className: "text-center p-6 rounded-xl bg-card border border-border hover:shadow-subtle hover:border-peacock/20 transition-smooth",
           children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(value.icon, { className: "w-6 h-6 text-primary" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-full bg-peacock/8 border border-peacock/15 flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(value.icon, { className: "w-6 h-6 text-peacock" }) }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-2", children: value.title }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-body leading-relaxed", children: value.description })
           ]
@@ -35885,16 +35948,37 @@ function ContactPage() {
     });
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "contact.page", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "section",
       {
-        className: "py-20 bg-secondary/20",
+        className: "relative py-20 bg-secondary/20 overflow-hidden",
         "data-ocid": "contact.hero_section",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 text-center max-w-2xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$4(), children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "We'd Love to Hear From You" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-4", children: "Get in Touch" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed", children: "Whether you have a question about our products, want to place a bulk order, or simply want to say hello — we're here for you." })
-        ] }) })
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/45 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 text-center max-w-2xl relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$4(), children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "We'd Love to Hear From You" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-4", children: "Get in Touch" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mb-5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-r from-transparent to-gold/40" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-l from-transparent to-gold/40" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed", children: "Whether you have a question about our products, want to place a bulk order, or simply want to say hello — we're here for you." })
+          ] }) })
+        ]
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 bg-background", "data-ocid": "contact.main_section", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-5xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-5 gap-12", children: [
@@ -36229,22 +36313,46 @@ const healthTopics = [
     ]
   }
 ];
+function GoldDivider$1() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mt-3 mb-1", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-12 bg-gradient-to-r from-transparent to-gold/40" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-12 bg-gradient-to-l from-transparent to-gold/40" })
+  ] });
+}
 function HealthBenefitsPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "health_benefits.page", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "section",
       {
-        className: "py-20 bg-secondary/20",
+        className: "relative py-20 bg-secondary/20 overflow-hidden",
         "data-ocid": "health_benefits.hero_section",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-3xl text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$3(), children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "Science-Backed Wellness" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-6", children: [
-            "The Health Power of",
-            /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary", children: "Pure Soy Nutrition" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed", children: "Backed by decades of nutritional science, soy is one of nature's most complete foods. Here's why Keshav Agro products are your best ally for a healthier life." })
-        ] }) })
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/45 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-3xl text-center relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$3(), children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "Science-Backed Wellness" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-3", children: [
+              "The Health Power of",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary", children: "Pure Soy Nutrition" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider$1, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed mt-5", children: "Backed by decades of nutritional science, soy is one of nature's most complete foods. Here's why Keshav Agro products are your best ally for a healthier life." })
+          ] }) })
+        ]
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -36257,14 +36365,22 @@ function HealthBenefitsPage() {
           {
             ...fadeUp$3(i * 0.08),
             "data-ocid": `health_benefits.topic_card.${i + 1}`,
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border hover:shadow-elevated transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border hover:shadow-elevated transition-smooth hover:border-peacock/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-4 mb-5", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-4xl", "aria-hidden": "true", children: topic.icon }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: "text-4xl p-2 rounded-xl bg-peacock/6 border border-peacock/12 shrink-0",
+                    "aria-hidden": "true",
+                    children: topic.icon
+                  }
+                ),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-foreground text-lg leading-tight", children: topic.title }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm mt-0.5", children: topic.subtitle })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-peacock font-body text-sm mt-0.5", children: topic.subtitle })
                 ] })
               ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-px bg-gradient-to-r from-gold/25 to-transparent mb-4" }),
               /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-2.5", children: topic.points.map((point) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
                 "li",
                 {
@@ -36273,7 +36389,7 @@ function HealthBenefitsPage() {
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "span",
                       {
-                        className: "w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0",
+                        className: "w-1.5 h-1.5 rounded-full bg-peacock mt-2 shrink-0",
                         "aria-hidden": "true"
                       }
                     ),
@@ -36295,8 +36411,9 @@ function HealthBenefitsPage() {
         "data-ocid": "health_benefits.comparison_section",
         children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4 max-w-3xl", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-12", ...fadeUp$3(), children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-3", children: "Soy Milk vs. Cow's Milk" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body", children: "Per 250ml serving comparison" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-1", children: "Soy Milk vs. Cow's Milk" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider$1, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body mt-4", children: "Per 250ml serving comparison" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp$3(0.1), children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-border shadow-subtle overflow-hidden", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-3 bg-primary/8 border-b border-border", children: [
@@ -36393,6 +36510,7 @@ const fadeUp$2 = (delay2 = 0) => ({
     delay: delay2
   }
 });
+const PEACOCK_EYE_SVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cellipse cx='100' cy='100' rx='90' ry='40' fill='none' stroke='%2300897b' stroke-width='0.6' stroke-opacity='0.06'/%3E%3Cellipse cx='100' cy='100' rx='70' ry='30' fill='none' stroke='%23c99a2e' stroke-width='0.5' stroke-opacity='0.05'/%3E%3Cellipse cx='100' cy='100' rx='50' ry='20' fill='none' stroke='%2300897b' stroke-width='0.6' stroke-opacity='0.07'/%3E%3Ccircle cx='100' cy='100' r='8' fill='none' stroke='%2300897b' stroke-width='1' stroke-opacity='0.08'/%3E%3C/svg%3E")`;
 function HomePage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "home.page", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -36418,6 +36536,32 @@ function HomePage() {
               "aria-hidden": "true"
             }
           ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute inset-0 pattern-peacock-feather opacity-70 pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute right-0 top-0 w-1/2 h-full opacity-[0.045] pointer-events-none",
+              style: {
+                backgroundImage: PEACOCK_EYE_SVG,
+                backgroundSize: "180px 180px",
+                backgroundRepeat: "repeat"
+              },
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/40 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-2xl", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp$2(0), children: /* @__PURE__ */ jsxRuntimeExports.jsx(
               Badge,
@@ -36436,7 +36580,8 @@ function HomePage() {
                   "Pure Plant Power",
                   /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary", children: "for a Healthier" }),
-                  " Life"
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Life" })
                 ]
               }
             ),
@@ -36492,14 +36637,19 @@ function HomePage() {
         children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-14", ...fadeUp$2(), children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-3", children: "Our Products" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight", children: "Featured Products" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight mb-3", children: "Featured Products" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mt-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-r from-transparent to-gold/40" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-l from-transparent to-gold/40" })
+            ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-8", children: PRODUCTS.map((product, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
             motion.div,
             {
               ...fadeUp$2(i * 0.12),
               "data-ocid": `home.product_card.${i + 1}`,
-              children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "overflow-hidden group hover:shadow-elevated transition-smooth border-border cursor-pointer h-full", children: [
+              children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "ornament-corner overflow-hidden group hover:shadow-elevated transition-smooth border-border cursor-pointer h-full", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative overflow-hidden aspect-[4/3] bg-secondary/20", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "img",
@@ -36555,16 +36705,28 @@ function HomePage() {
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 bg-secondary/20", "data-ocid": "home.why_section", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-14", ...fadeUp$2(), children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-3", children: "The Power of Pure Soya" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight", children: "Why Keshav Agro Foods?" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight mb-3", children: "Why Keshav Agro Foods?" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mt-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-r from-transparent to-gold/40" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-l from-transparent to-gold/40" })
+        ] })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6", children: BENEFITS.map((benefit, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
         motion.div,
         {
           ...fadeUp$2(i * 0.1),
           "data-ocid": `home.benefit_card.${i + 1}`,
-          className: "flex items-start gap-4 p-6 rounded-xl bg-card border border-border hover:shadow-subtle transition-smooth",
+          className: "flex items-start gap-4 p-6 rounded-xl bg-card border border-border hover:shadow-subtle transition-smooth hover:border-peacock/20",
           children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-3xl", "aria-hidden": "true", children: benefit.icon }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "span",
+              {
+                className: "text-3xl p-2 rounded-lg bg-peacock/5 border border-peacock/10",
+                "aria-hidden": "true",
+                children: benefit.icon
+              }
+            ),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground mb-1.5", children: benefit.title }),
               /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-body leading-relaxed", children: benefit.description })
@@ -36574,53 +36736,86 @@ function HomePage() {
         benefit.id
       )) })
     ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "section",
       {
-        className: "py-20 bg-background",
+        className: "relative py-20 bg-background overflow-hidden",
         "data-ocid": "home.testimonials_section",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-14", ...fadeUp$2(), children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-3", children: "Customer Love" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight", children: "What People Say" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-6", children: TESTIMONIALS.slice(0, 3).map((testimonial, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
             {
-              ...fadeUp$2(i * 0.1),
-              "data-ocid": `home.testimonial_card.${i + 1}`,
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border hover:shadow-subtle transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
-                  {
-                    className: "flex gap-0.5 mb-4",
-                    "aria-label": `${testimonial.rating} out of 5 stars`,
-                    children: Array.from({ length: testimonial.rating }, (_, j) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      Star,
-                      {
-                        className: "w-4 h-4 fill-primary text-primary"
-                      },
-                      `star-${testimonial.id}-${j}`
-                    ))
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-foreground font-body leading-relaxed mb-6 italic", children: [
-                  '"',
-                  testimonial.text,
-                  '"'
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-display font-bold text-sm", children: testimonial.avatar }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-semibold text-foreground text-sm", children: testimonial.name }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground font-body", children: testimonial.location })
+              className: "absolute inset-0 pattern-peacock-feather opacity-60 pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute inset-0 pointer-events-none opacity-[0.035]",
+              style: {
+                backgroundImage: PEACOCK_EYE_SVG,
+                backgroundSize: "160px 160px",
+                backgroundRepeat: "repeat"
+              },
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/30 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4 relative z-10", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-14", ...fadeUp$2(), children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-3", children: "Customer Love" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-4xl text-foreground tracking-tight mb-3", children: "What People Say" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mt-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-r from-transparent to-gold/40" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-l from-transparent to-gold/40" })
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-6", children: TESTIMONIALS.slice(0, 3).map((testimonial, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              motion.div,
+              {
+                ...fadeUp$2(i * 0.1),
+                "data-ocid": `home.testimonial_card.${i + 1}`,
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border hover:shadow-subtle transition-smooth hover:border-gold/20 bg-card/90 backdrop-blur-sm", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "flex gap-0.5 mb-4",
+                      "aria-label": `${testimonial.rating} out of 5 stars`,
+                      children: Array.from({ length: testimonial.rating }, (_, j) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Star,
+                        {
+                          className: "w-4 h-4 fill-gold text-gold"
+                        },
+                        `star-${testimonial.id}-${j}`
+                      ))
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-foreground font-body leading-relaxed mb-6 italic", children: [
+                    '"',
+                    testimonial.text,
+                    '"'
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-full bg-peacock/10 border border-peacock/20 flex items-center justify-center text-peacock font-display font-bold text-sm", children: testimonial.avatar }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-semibold text-foreground text-sm", children: testimonial.name }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground font-body", children: testimonial.location })
+                    ] })
                   ] })
-                ] })
-              ] }) })
-            },
-            testimonial.id
-          )) })
-        ] })
+                ] }) })
+              },
+              testimonial.id
+            )) })
+          ] })
+        ]
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 bg-primary", "data-ocid": "home.cta_section", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$2(), children: [
@@ -36695,6 +36890,7 @@ const fadeUp$1 = (delay2 = 0) => ({
   }
 });
 function ProductCard({ product, index: index2 }) {
+  var _a2, _b2;
   const [added, setAdded] = reactExports.useState(false);
   const handleAddToCart = () => {
     setAdded(true);
@@ -36716,7 +36912,7 @@ function ProductCard({ product, index: index2 }) {
         delay: index2 * 0.12
       },
       "data-ocid": `products.product_card.${index2 + 1}`,
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "overflow-hidden group hover:shadow-elevated transition-smooth border-border h-full flex flex-col", children: [
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "ornament-corner overflow-hidden group hover:shadow-elevated transition-smooth border-border h-full flex flex-col hover:border-gold/20", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative overflow-hidden aspect-square bg-secondary/20", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
@@ -36727,7 +36923,11 @@ function ProductCard({ product, index: index2 }) {
               loading: index2 === 0 ? "eager" : "lazy"
             }
           ),
-          product.badge && /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-medium", children: product.badge })
+          product.badge && /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-medium", children: product.badge }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute bottom-3 right-3 bg-card/90 backdrop-blur-sm border border-gold/25 rounded-lg px-2.5 py-1.5 shadow-subtle", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display font-bold text-xs text-gold leading-none", children: ((_b2 = (_a2 = product.nutrition) == null ? void 0 : _a2[0]) == null ? void 0 : _b2.value) ?? "—" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "block text-[10px] text-muted-foreground font-body leading-none mt-0.5", children: "Protein" })
+          ] })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6 flex flex-col flex-1", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between mb-3", children: [
@@ -36753,7 +36953,7 @@ function ProductCard({ product, index: index2 }) {
               {
                 className: "flex items-center gap-1.5 text-xs text-muted-foreground font-body",
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "w-3.5 h-3.5 text-primary shrink-0" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "w-3.5 h-3.5 text-peacock shrink-0" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: b })
                 ]
               },
@@ -36763,12 +36963,18 @@ function ProductCard({ product, index: index2 }) {
           /* @__PURE__ */ jsxRuntimeExports.jsx(Separator, { className: "mb-5" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-display font-semibold text-foreground text-sm mb-3 uppercase tracking-wide", children: "Nutrition per serving" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-4 gap-2", children: product.nutrition.map((n) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-4 gap-2", children: product.nutrition.map((n, ni) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
               "div",
               {
-                className: "text-center bg-secondary/30 rounded-lg p-2",
+                className: `text-center rounded-lg p-2 ${ni === 0 ? "bg-gold/8 border border-gold/15" : "bg-secondary/30"}`,
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-foreground text-sm", children: n.value }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
+                    {
+                      className: `font-display font-bold text-sm ${ni === 0 ? "text-gold" : "text-foreground"}`,
+                      children: n.value
+                    }
+                  ),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground font-body", children: n.label })
                 ]
               },
@@ -36798,16 +37004,37 @@ function ProductCard({ product, index: index2 }) {
 }
 function ProductsPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "products.page", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "section",
       {
-        className: "py-16 bg-secondary/20",
+        className: "relative py-16 bg-secondary/20 overflow-hidden",
         "data-ocid": "products.hero_section",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 text-center max-w-2xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$1(), children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "Pure Soy Nutrition" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-4", children: "Our Product Range" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed", children: "Three premium products, one commitment — natural, honest, nutritious food for every lifestyle." })
-        ] }) })
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/45 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute inset-0 pattern-peacock-feather opacity-50 pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 text-center max-w-2xl relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$1(), children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "Pure Soy Nutrition" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-4", children: "Our Product Range" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mb-5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-r from-transparent to-gold/40" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-16 bg-gradient-to-l from-transparent to-gold/40" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed", children: "Three premium products, one commitment — natural, honest, nutritious food for every lifestyle." })
+          ] }) })
+        ]
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -36824,7 +37051,12 @@ function ProductsPage() {
         className: "py-16 bg-secondary/20",
         "data-ocid": "products.quality_section",
         children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-3xl text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp$1(), children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-4", children: "Quality You Can Taste" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-2", children: "Quality You Can Taste" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mb-5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-12 bg-gradient-to-r from-transparent to-gold/40" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-12 bg-gradient-to-l from-transparent to-gold/40" })
+          ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed mb-6", children: "Every product is made in small batches to ensure freshness, tested for nutritional integrity, and packed with love in eco-conscious packaging. No shortcuts, ever." }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap justify-center gap-3", children: [
             "Non-GMO Certified",
@@ -36891,6 +37123,13 @@ const impactStats = [
   { value: "75%", label: "Lower greenhouse gas emissions" },
   { value: "100%", label: "Renewable energy in production" }
 ];
+function GoldDivider() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mt-3 mb-1", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-12 bg-gradient-to-r from-transparent to-gold/40" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold/60 text-xs", children: "✦" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px w-12 bg-gradient-to-l from-transparent to-gold/40" })
+  ] });
+}
 function SustainabilityPage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "sustainability.page", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -36909,14 +37148,36 @@ function SustainabilityPage() {
               "aria-hidden": "true"
             }
           ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute inset-0 pattern-peacock-feather opacity-70 pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold/50 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/30 to-transparent pointer-events-none",
+              "aria-hidden": "true"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 relative z-10 max-w-3xl text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp(), children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "Our Commitment to the Planet" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-6", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display font-bold text-5xl text-foreground tracking-tight leading-tight mb-3", children: [
               "Feeding Families,",
               /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
               /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary", children: "Protecting the Earth" })
             ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed", children: "At Keshav Agro Foods, sustainability isn't a marketing term. It's embedded in every decision — from the seed to the shelf." })
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg leading-relaxed mt-5", children: "At Keshav Agro Foods, sustainability isn't a marketing term. It's embedded in every decision — from the seed to the shelf." })
           ] }) })
         ]
       }
@@ -36928,15 +37189,16 @@ function SustainabilityPage() {
         "data-ocid": "sustainability.why_section",
         children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4 max-w-4xl", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-14", ...fadeUp(), children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-3", children: "Why Soy is the Sustainable Choice" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg max-w-2xl mx-auto", children: "The environmental impact of soy-based food is dramatically lower than animal agriculture. Choosing Keshav Agro Foods is choosing a smaller footprint." })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-1", children: "Why Soy is the Sustainable Choice" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body text-lg max-w-2xl mx-auto mt-5", children: "The environmental impact of soy-based food is dramatically lower than animal agriculture. Choosing Keshav Agro Foods is choosing a smaller footprint." })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12", children: impactStats.map((stat, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
             motion.div,
             {
               ...fadeUp(i * 0.1),
               "data-ocid": `sustainability.impact_stat.${i + 1}`,
-              className: "text-center p-6 rounded-xl bg-secondary/30 border border-border",
+              className: "text-center p-6 rounded-xl bg-secondary/30 border border-border hover:border-peacock/20 transition-smooth",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-3xl text-primary mb-1", children: stat.value }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-body leading-tight", children: stat.label })
@@ -36955,19 +37217,20 @@ function SustainabilityPage() {
         children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4 max-w-5xl", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "text-center mb-14", ...fadeUp(), children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-3", children: "Our Pledges" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight", children: "Our Sustainability Commitments" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-1", children: "Our Sustainability Commitments" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(GoldDivider, {})
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-8", children: commitments.map((c, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
             motion.div,
             {
               ...fadeUp(i * 0.1),
               "data-ocid": `sustainability.commitment_card.${i + 1}`,
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border hover:shadow-elevated transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "h-full border-border hover:shadow-elevated transition-smooth hover:border-peacock/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-8", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-4 mb-4", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(c.icon, { className: "w-6 h-6 text-primary" }) }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-peacock/8 border border-peacock/15 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(c.icon, { className: "w-6 h-6 text-peacock" }) }),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-foreground text-lg", children: c.title }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm font-medium", children: c.stats })
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gold font-body text-sm font-medium", children: c.stats })
                   ] })
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed text-sm", children: c.description })
@@ -36984,7 +37247,7 @@ function SustainabilityPage() {
         className: "py-20 bg-background",
         "data-ocid": "sustainability.farm_section",
         children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-5xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp(), children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-2xl overflow-hidden shadow-elevated aspect-video", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { ...fadeUp(), children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-2xl overflow-hidden shadow-elevated aspect-video border border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
               src: "/assets/generated/sustainability-farm.dim_1200x500.jpg",
@@ -36995,7 +37258,8 @@ function SustainabilityPage() {
           ) }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { ...fadeUp(0.15), children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary font-body text-sm uppercase tracking-widest font-medium mb-4", children: "From Our Farms" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-5", children: "Fields That Feed the Future" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-3xl text-foreground tracking-tight mb-2", children: "Fields That Feed the Future" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-[2px] bg-gradient-to-r from-gold/60 to-transparent mb-5" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed mb-4", children: "Our partner farms in Maharashtra and Madhya Pradesh use traditional and modern sustainable techniques — crop rotation, natural composting, and minimal-till farming — to grow the finest soybeans India has to offer." }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-body leading-relaxed mb-8", children: "By investing in Indian farmers, we're not just building a supply chain — we're nurturing a movement towards regenerative agriculture and rural prosperity." }),
             /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/contact", "data-ocid": "sustainability.contact_button", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
